@@ -2,7 +2,9 @@
 
 A web application built with PHP that allows users to generate dynamic web forms using natural language descriptions powered by an AI model (via OpenRouter). Generated forms can be saved, shared via unique links, and user submissions can be collected and stored in a database.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ## Features
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+## Features
 
 * **AI-Powered Form Generation:** Describe the form you need in plain English (e.g., "Create a contact form with name, email, and message fields").
 * **Dynamic Field Types:** Supports various HTML input types including text, email, textarea, select dropdowns, radio buttons, and checkboxes based on AI interpretation.
