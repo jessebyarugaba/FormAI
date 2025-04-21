@@ -1,0 +1,65 @@
+[
+  {
+    "type": "text", // text, textarea, select, radio, checkbox, email, number, date, etc.
+    "name": "user_name", // machine-readable name for form submission (AI should generate this)
+    "label": "Full Name", // human-readable label (AI should generate this)
+    "placeholder": "Enter your full name", // placeholder text (AI should generate this)
+    "required": true, // boolean indicating if the field is mandatory
+    "value": "", // default value (optional)
+    "options": null // only used for select, radio, checkbox (array of strings or key/value pairs)
+  },
+  {
+    "type": "email",
+    "name": "user_email",
+    "label": "Email Address",
+    "placeholder": "your.email@example.com",
+    "required": true,
+    "value": "",
+    "options": null
+  },
+  {
+    "type": "textarea",
+    "name": "message",
+    "label": "Your Message",
+    "placeholder": "Type your message here...",
+    "required": false,
+    "value": "",
+    "options": null
+  },
+  {
+    "type": "select",
+    "name": "country",
+    "label": "Country",
+    "required": true,
+    "value": "USA", // Default selected value
+    "options": [ // Can be simple array
+        "USA",
+        "Canada",
+        "Mexico",
+        "United Kingdom"
+    ]
+  },
+  {
+    "type": "radio",
+    "name": "contact_method",
+    "label": "Preferred Contact Method",
+    "required": true,
+    "value": "email", // Default checked value
+    "options": [ // Or array of objects for more control (e.g., distinct value/label)
+        {"value": "email", "label": "Email"},
+        {"value": "phone", "label": "Phone"}
+    ]
+  },
+  {
+    "type": "checkbox",
+    "name": "interests", // Often ends with [] for PHP processing: interests[]
+    "label": "Interests (Select multiple)",
+    "required": false,
+    "value": null, // Checkboxes don't usually have a single default value this way
+    "options": [ // Array of strings or objects
+        "Technology",
+        "Sports",
+        "Music"
+    ]
+  }
+]

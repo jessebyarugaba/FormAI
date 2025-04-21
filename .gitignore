@@ -1,0 +1,10 @@
+# .gitignore
+
+# Environment variables file
+.env
+
+# Composer dependencies folder
+/vendor/
+
+# Optional: Log files, etc.
+*.log
